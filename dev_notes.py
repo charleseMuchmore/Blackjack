@@ -16,7 +16,7 @@
             ###add them, and place in a variable
         ##display current score --> display (next to their cards)
             ###print the variable with the score 
-            ###Not sure how to put it next to the cards###
+            ###Put next to user's cards###
 
         ##display compy's first card --> randomly choose two cards from a deck of cards
             ###do the same thing you did for choosing for the user
@@ -26,4 +26,21 @@
 
         ##display option to get another card or no --> display an option to get another card or no
             #get_card = input("Would you like to take another card? Type 'y' to take another card, 'n' to pass: ")
-       
+
+
+#GENERAL RULES#
+# The deck is unlimited in size.
+# There are no jokers.
+# The Jack/King/Queen all count as 10.
+# The Ace can count as 11 or 1.
+# Uses the following list for a deck of cards:
+# cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+# The cards in the list have equal probability of being drawn.
+# Cards are not removed from the deck as they are drawn. 
+
+
+
+##TO Upgrade##
+#Make the deck more realistic
+#add Jokers??
+#
