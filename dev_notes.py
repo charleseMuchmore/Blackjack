@@ -25,9 +25,17 @@
             ###display that variable as the compy's card
 
         ##display option to get another card or no --> display an option to get another card or no
-            #get_card = input("Would you like to take another card? Type 'y' to take another card, 'n' to pass: ")
+            ###get_card = input("Would you like to take another card? Type 'y' to take another card, 'n' to pass: ")
 
+#more_card = input("Type 'y' to get another card, type 'n' to pass: ")
 
+    #The compy needs to get it's cards too. It should be able to do more than 2
+    #y -->
+
+    #n --> display user's hand and score, and compy's hand and final score. Determine who won, or if its a draw. prompt to play again. 
+        ##display user's hand --> Print out the user's hand and score as their final hand and final score
+
+        ##display compy's hand --> Print out the compy's final hand and score
 #GENERAL RULES#
 # The deck is unlimited in size.
 # There are no jokers.
@@ -43,4 +51,4 @@
 ##TO Upgrade##
 #Make the deck more realistic
 #add Jokers??
-#
+#Make the compy card picking algorythm account for chance
