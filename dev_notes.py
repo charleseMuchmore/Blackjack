@@ -12,7 +12,10 @@
 #Make the deck more realistic
 #add Jokers??
 #Make the compy card picking algorythm account for chance
-#possibly add more Ai, and maybe even capability for more players?
+#possibly add more compies, and maybe even capability for more players?
 #add user friendly error messages for invalid inputs
 #perhaps make different difficulty levels
 #maybe add a functionalty to keep track of score over multiple rounds
+#add card visuals 
+#use blackjack lingo 
+#shuffling algorhythm 

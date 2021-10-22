@@ -17,14 +17,14 @@ if play_game == 'y' or play_game == 'yes':
     print(f"    Computer's first card: {compy_cards[0]}")
 
     #cont dealing cards
-    more_card = input("Type 'y' to get another card, type 'n' to pass: ")
+    more_card = input("Type 'h' to hit, type 's' to stand: ")
 
     sumCompy_cards = card_add(compy_cards)
-    if more_card == 'n' or sumUser_cards >= 21:
+    if more_card == 's' or sumUser_cards >= 21:
         determine_winner(sumUser_cards, sumCompy_cards)
 
     print(' ')
-    while more_card == 'y':
+    while more_card == 'h':
         if sumUser_cards <= 21:
             deal_cards(deck, user_cards, 1)
             if 11 in user_cards and sum(user_cards) > 21:
@@ -35,13 +35,13 @@ if play_game == 'y' or play_game == 'yes':
             print(f"    Your cards: {user_cards}, current score: {sumUser_cards}")
             print(f"    Computer's first card: {compy_cards[0]}")
             if sumUser_cards <= 21:
-                more_card = input("Type 'y' to get another card, type 'n' to pass: ")
+                more_card = input("Type 'h' to hit, type 's' to stand: ")
             else:
-                more_card = 'n'
+                more_card = 's'
             
 
     sumCompy_cards = card_add(compy_cards)
-    if more_card == 'n':
+    if more_card == 's':
         win = determine_winner(sumUser_cards, sumCompy_cards)
         print(' ')
         if win == 'Y':

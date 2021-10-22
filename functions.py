@@ -30,7 +30,7 @@ def cardAdd4Compy(cards, deck ):
     """Takes compy cards and deck, adds compy cards; if less than 20, gives compy another. returns list of compy cards. """
     sumCards = card_add(cards)
     # There could be a better algorythm here that weighs the chances, and decides based on that
-    if sumCards < 20: 
+    if sumCards < 18: 
         cards = deal_cards(deck, cards, 1)
     if 11 in cards and sumCards > 21:
         cards.remove(11)
