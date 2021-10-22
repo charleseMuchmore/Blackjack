@@ -32,6 +32,9 @@ def cardAdd4Compy(cards, deck ):
     # There could be a better algorythm here that weighs the chances, and decides based on that
     if sumCards < 20: 
         cards = deal_cards(deck, cards, 1)
+    if 11 in cards and sumCards > 21:
+        cards.remove(11)
+        cards.append(1)
     return cards
 
 def determine_winner(user_score, compy_score):

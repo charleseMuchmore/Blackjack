@@ -27,6 +27,9 @@ if play_game == 'y' or play_game == 'yes':
     while more_card == 'y':
         if sumUser_cards <= 21:
             deal_cards(deck, user_cards, 1)
+            if 11 in user_cards and sum(user_cards) > 21:
+                user_cards.remove(11)
+                user_cards.append(1)
             sumUser_cards = sumUser_cards + user_cards[-1]
             compy_cards = cardAdd4Compy(compy_cards, deck)
             print(f"    Your cards: {user_cards}, current score: {sumUser_cards}")
